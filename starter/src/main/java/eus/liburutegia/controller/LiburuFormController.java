@@ -14,5 +14,7 @@ public class LiburuFormController {
     @FXML
     private Button gordebtn;
 
+    private void gorde(){
 
+    }
 }
