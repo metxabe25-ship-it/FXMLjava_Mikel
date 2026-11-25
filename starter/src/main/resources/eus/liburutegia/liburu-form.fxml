@@ -3,10 +3,14 @@
 <!-- 1. Inportazioak: FXMLan erabiltzen den klase bakoitzak bere <?import?> behar du -->
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
 <!-- TODO: gehitu Label, TextField eta Button klaseen inportazioak -->
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
 
 <!-- 2. Erro-elementua -->
 <!-- TODO (3. urratsa): gehitu fx:controller atributua -->
+
 <GridPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
           hgap="10" vgap="10">
 
@@ -14,7 +18,15 @@
 
     <!-- Adibidea: lehen errenkada -->
     <Label text="Izenburua:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+    <TextField fx:id="izenbutxt" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
 
+    <Label text="Egilea:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+    <TextField fx:id="egileatxt" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+    <Label text="Urtea:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+    <TextField fx:id="urteatxt" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+    <Button text="Gorde" fx:id="gordebtn" onAction="#gorde"/>
     <!-- TODO: osatu formularioa LiburuFormView.java klasean dagoenaren arabera -->
 
 </GridPane>

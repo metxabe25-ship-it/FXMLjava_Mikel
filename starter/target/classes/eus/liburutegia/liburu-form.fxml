@@ -3,10 +3,12 @@
 <!-- 1. Inportazioak: FXMLan erabiltzen den klase bakoitzak bere <?import?> behar du -->
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
 <!-- TODO: gehitu Label, TextField eta Button klaseen inportazioak -->
 
 <!-- 2. Erro-elementua -->
 <!-- TODO (3. urratsa): gehitu fx:controller atributua -->
+
 <GridPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
           hgap="10" vgap="10">
 
