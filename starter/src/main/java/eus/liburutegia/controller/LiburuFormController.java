@@ -1,7 +1,6 @@
 package eus.liburutegia.controller;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
@@ -16,10 +15,26 @@ public class LiburuFormController {
     private Label mezualbl;
 
     @FXML
-    private void gorde(){
-        String m = "Gordeta: " + izenbutxt.getText()
-                + " (" + egileatxt.getText() + ", " + urteatxt.getText() + ")";
+    private void initialize() {mezualbl.setText("Bete datuak eta sakatu Gorde.");}
 
-        mezualbl.setText(m);
+    @FXML
+    private void gorde(){
+        String urtea = urteatxt.getText();
+        if(!zenbakiaDa(urtea)){
+            mezualbl.setText("Urtea ezin da testua izan.");
+
+        }else {
+            mezualbl.setText("Gordeta: " + izenbutxt.getText()
+                    + " (" + egileatxt.getText() + ", " + urtea + ")");
+        }
+    }
+
+    private boolean zenbakiaDa(String urtea){
+        try {
+            Integer.parseInt(urtea);
+            return true;
+        } catch (NumberFormatException e) {
+            return false;
+        }
     }
 }
