@@ -4,6 +4,7 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.control.Label?>
+
 <!-- TODO: gehitu Label, TextField eta Button klaseen inportazioak -->
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.Button?>
@@ -11,8 +12,9 @@
 <!-- 2. Erro-elementua -->
 <!-- TODO (3. urratsa): gehitu fx:controller atributua -->
 
+
 <GridPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
-          hgap="10" vgap="10">
+          hgap="10" vgap="10" fx:controller="eus.liburutegia.controller.LiburuFormController">
 
     <padding><Insets top="20" right="20" bottom="20" left="20"/></padding>
 
@@ -26,9 +28,9 @@
     <Label text="Urtea:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
     <TextField fx:id="urteatxt" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
 
-    <Button text="Gorde" fx:id="gordebtn" onAction="#gorde"/>
+    <Button text="Gorde" GridPane.rowIndex="3" fx:id="gordebtn" onAction="#gorde"/>
 
-    <Label fx:id="mezuaLbl"/>
+    <Label fx:id="mezualbl" GridPane.rowIndex="4"/>
     <!-- TODO: osatu formularioa LiburuFormView.java klasean dagoenaren arabera -->
 
 </GridPane>

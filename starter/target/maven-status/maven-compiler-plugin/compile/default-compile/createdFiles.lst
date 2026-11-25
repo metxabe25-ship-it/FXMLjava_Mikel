@@ -1,3 +1,4 @@
 eus\liburutegia\view\LiburuFormView.class
 eus\liburutegia\App.class
 module-info.class
+eus\liburutegia\controller\LiburuFormController.class

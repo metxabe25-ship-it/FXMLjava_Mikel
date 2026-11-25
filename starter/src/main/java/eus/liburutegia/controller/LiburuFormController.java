@@ -13,14 +13,13 @@ public class LiburuFormController {
     @FXML
     private TextField urteatxt;
     @FXML
-    private Button gordebtn;
-    @FXML
-    private Label mezuaLabel;
+    private Label mezualbl;
 
+    @FXML
     private void gorde(){
         String m = "Gordeta: " + izenbutxt.getText()
                 + " (" + egileatxt.getText() + ", " + urteatxt.getText() + ")";
 
-        mezuaLabel.setText(m);
+        mezualbl.setText(m);
     }
 }
