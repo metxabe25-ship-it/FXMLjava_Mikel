@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 1. Inportazioak: FXMLan erabiltzen den klase bakoitzak bere <?import?> behar du -->
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<!-- TODO: gehitu Label, TextField eta Button klaseen inportazioak -->
+
+<!-- 2. Erro-elementua -->
+<!-- TODO (3. urratsa): gehitu fx:controller atributua -->
+<GridPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+          hgap="10" vgap="10">
+
+    <padding><Insets top="20" right="20" bottom="20" left="20"/></padding>
+
+    <!-- Adibidea: lehen errenkada -->
+    <Label text="Izenburua:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+
+    <!-- TODO: osatu formularioa LiburuFormView.java klasean dagoenaren arabera -->
+
+</GridPane>
